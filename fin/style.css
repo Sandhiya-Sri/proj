@@ -1,0 +1,138 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+header {
+  background-color: #333;
+  color: white;
+  padding: 1em;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+  text-align: center;
+  padding: 5em 2em;
+}
+.hero button {
+  background-color: white;
+  color: #333;
+  border: none;
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.hero button:hover {
+  background-color: #eee;
+}
+
+/* Content Sections */
+.content {
+  padding: 3em 2em;
+  text-align: center;
+}
+
+/* Gallery */
+.gallery {
+  text-align: center;
+  padding: 3em 2em;
+}
+.carousel {
+  position: relative;
+  display: inline-block;
+}
+.carousel img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+}
+.carousel-buttons {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.carousel-buttons button {
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  gap: 0.5em;
+}
+input, textarea {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button[type="submit"] {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 0.7em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  position: sticky;
+  bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+  .hero {
+    padding: 3em 1em;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+}
